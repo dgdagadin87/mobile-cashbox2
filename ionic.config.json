@@ -1,0 +1,7 @@
+{
+  "name": "mobile-cashbox",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
