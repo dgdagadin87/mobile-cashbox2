@@ -1,7 +1,8 @@
 {
   "name": "mobile-cashbox",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
