@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { AuthComponent } from './auth/auth.component';
+import { MainComponent } from './main/main.component';
 
 @NgModule({
   imports: [
@@ -11,6 +12,9 @@ import { AuthComponent } from './auth/auth.component';
     CommonModule,
     FormsModule
   ],
-  declarations: [AuthComponent]
+  declarations: [
+    AuthComponent,
+    MainComponent
+  ]
 })
 export class PagesModule {}
