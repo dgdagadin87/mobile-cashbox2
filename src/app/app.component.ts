@@ -23,9 +23,9 @@ export class AppComponent {
 
   initializeApp() {
     this.platform.ready().then(() => {
-      //this.statusBar.styleDefault();
-      //this.splashScreen.hide();
-      //this.bootstrap.start();
+      this.statusBar.styleDefault();
+      this.splashScreen.hide();
+      this.bootstrap.start();
     });
   }
 }

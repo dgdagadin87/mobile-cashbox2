@@ -1,27 +1,29 @@
 import { Injectable } from '@angular/core';
 
 //import { UpdateService } from './UpdateService';
-//import { PlatformService } from './PlatformService';
 //import { IonicService } from './IonicService';
 //import { ApiLoadingService } from './ApiLoadingService';
 //import { AuthService } from './AuthService';
 //import { PushService } from './PushService';
 //import { NavService } from "./NavService";
 
-//import { AlertService } from './AlertService';
+import { PlatformService } from './PlatformService';
+import { AlertService } from './AlertService';
 
 @Injectable({
     providedIn: 'root',
-  })
+})
 export class BootstrapService {
 
     static $inject = [
-        /*'PlatformService', 'IonicService', 'ApiLoadingService', 'UpdateService', 'AuthService', 'PushService',*/
-        //'AlertService'
+        'PlatformService',
+        /*'IonicService', 'ApiLoadingService', 'UpdateService', 'AuthService', 'PushService',*/
+        'AlertService'
     ];
 
     constructor(
-        //private alertService: AlertService,
+        private platformService: PlatformService,
+        private alertService: AlertService,
     ) {}
 
 
@@ -37,7 +39,6 @@ export class BootstrapService {
         }*/
 
         //this.pushService.init();
-        //this.platform.hideSplashScreen();
 
         this.updateAndRestart();
     }
